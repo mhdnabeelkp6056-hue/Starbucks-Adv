@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbuks</title>
+    <link rel="icon" href="./images/logo.png">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#">
+                <img src="./images/logo.png" alt="logo" class="logo" />
+            </a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">What's New</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <!-- Content section -->
+        <div class="content">
+            <div class="text-box">
+                <h2>it's not just Coffee<br>It's <span>Starbuks</span></h2>
+                <p>Experience the perfect blend of rich flavor, warmth, and comfort with Starbucks <br>
+                    coffee. From the first sip to the last, every cup is crafted to energize your day and <br> brighten
+                    your moments. Whether you love a creamy latte, a bold espresso, or a <br> refreshing cold brew,
+                    Starbucks brings premium-quality coffee and a cozy café <br>
+                    experience together in every visit. Sip happiness, share conversations, and <br> make every break
+                    special with Starbucks.
+                </p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="img-box">
+                <img src="./images/img1.png" alt="image" class="starbucsk">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="./images/thumb1.png" class="images1"
+                    onclick="imgSlider('/images/img1.png'); colorChange('#017143')"></li>
+            <li><img src="./images/thumb2.png" class="images2"
+                    onclick="imgSlider('/images/img2.png'); colorChange('#eb7495')"></li>
+            <li><img src="./images/thumb3.png" class="images3"
+                    onclick="imgSlider('/images/img3.png'); colorChange('#d752b1')"></li>
+        </ul>
+        <ul class="social-media">
+            <li><a href="#"><img src="./images/facebook.png" alt="icon"></a></li>
+            <li><a href="#"><img src="./images/twitter.png" alt="icon"></a></li>
+            <li><a href="#"><img src="./images/instagram.png" alt="icon"></a></li>
+        </ul>
+    </section>
+    <script>
+        function imgSlider(anything) {
+            document.querySelector(".starbucsk").src = anything;
+        }
+        function colorChange(color) {
+            const circle = document.querySelector(".circle")
+            circle.style.background = color;
+        }
+    </script>
+</body>
+
+</html>
